@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.7) url(assest/inup.jpg);
+    background-blend-mode: darken;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     transition: 5s;
+
+     animation-name: animate;
+     animation-direction: alternate-reverse;
+     animation-duration: 30s;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+     animation-play-state: running;
+     animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(b1.jpg);
+       
+    }
+
+    20%{
+        background-image: url(b2.jpg);
+    }
+
+    40%{
+        background-image: url(b3.jpg);
+    }
+
+    60%{
+        background-image: url(b4.jpg);
+    }
+
+}
+
+
+header{
+    width: 100%;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+header .logo{
+    text-decoration: none;
+    color: #fff;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 11%;
+    padding-left: 5%;
+    
+}
+
+.title{
+    position: relative;
+   color: #fff;
+}
+
+.title h1{
+    font-size: 70px;
+}
+.title h1 span{
+    color:rgb(113, 65, 232);
+}
+
+.button a{
+    text-decoration: none;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    transition:0.5s ;
+    border: #fff 1.5px solid;
+    margin: auto;
+    
+}
+
+.button{
+    position: absolute;
+    margin: auto;
+    top: 110%;
+    display: flex;
+    gap: 15px;
+}
+
+.button a:hover{
+    transform: translateY(-15px);
+}
+
+.button .read{
+    border: #fff solid 1.5px;
+    color: #fff;
+    background: none;
+    padding: 10px 20px;
+    margin: auto;
+    
+}
+
+
+/* about btton */
+
+.button2{
+margin: auto;
+margin-top: 3%;
+}
+
+
+.button2 a{
+text-decoration: none;
+color: black;
+padding: 10px 20px;
+border: 2px solid black;
+border-radius: 25px;
+}
+
+.button2 a:hover{
+    transform: translateY(-15px);
+}
+
+.service{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    justify-content: center;
+    margin: 6% auto;
+    top: 47%;
+  
+
+}
+.box{
+    width: 14%;
+    height: 50%;
+    padding: 35px;
+    border-radius: 14px;
+    transition:0.5s ;
+    box-shadow: 0.5px 1px 9px   #ababab;
+    
+}
+
+.box:hover{
+    transform: translateY(-15px);
+}
+
+.box h3{
+    text-align: center;
+    margin: auto;
+    
+}
+
+.box i{
+    
+margin-left: 40% !important;
+margin-top: -10% !important;
+
+}
+
+
+/* about us */
+
+.about{
+display: flex;
+margin-left: 10%;
+margin-top: 5%;
+
+}
+
+.about .image{
+    min-height: 80vh;
+    width: 150%;
+    background:  url(about.jpg);
+    background-blend-mode: darken;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     margin-left: 5%;
+     margin-top: 5%;
+    
+}
+
+.aboutcontent{
+    margin: auto;
+    margin-top: 10%;
+    margin-left:5%;
+}
+
+.aboutcontent h1{
+    font-size: 40px;
+    color: black;
+    transition: 5s;
+
+}
+
+.aboutcontent p{
+    width: 70%;
+    margin-top: 2%;
+    line-height: 30px;
+    text-align: justify;
+    color: #ababab;
+}
+
+
+
+
+/* doctors */
+
+.doctors h1{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 40px;
+}
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.card{
+    position: relative;
+    width: 325px;
+    height: 350px;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.card:hover{
+    background: rgb(151, 125, 214);
+    color: #fff;
+    
+    
+    
+}
+
+.card-image{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius:50%;
+    z-index: 1;
+    overflow: hidden;
+    border: 10px solid #fff;
+}
+
+.card-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    
+}
+
+.info{
+   text-align: center;
+   justify-content: center;
+   margin: auto;
+   margin-top: 50%;
+}
+
+.info h2{
+    font-weight: 20;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.info h3{
+    margin-top: 10px;
+    letter-spacing: 5px;
+    color: rgb(105, 105, 189);
+}
+
+
+.info h5{
+    font-weight: 50;
+    margin-top: 10px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.button3{
+   margin-left: 0.5%;
+   margin-top: 4%;
+}
+
+.button3 a{
+    text-decoration: none;
+    background: none;
+    margin: auto;
+    top: 3%;
+    padding: 10px 80px;
+    color: black;
+    border: 1px solid black;
+    transition:0.5s ;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.button3 a:hover{
+    transform: translateY(-15px);
+}
+
+.button4 a{
+    text-decoration: none;
+    color: black;
+    background: none;
+    padding: 5px 10px;
+    border: 1px solid #222;
+}
+
+.button4{
+margin-top: 10px;
+}
+
+.button4 a:hover{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.line{
+    width: 50%;
+    height: 5px;
+    background: rgb(113, 65, 232);
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+

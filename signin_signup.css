@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+
+.hero{
+     height: 100%;
+     width: 100%;
+     background: rgba(0,0,0,0.7) url(assest/inup.jpg);
+     background-blend-mode: darken;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      
+}
+
+.form{
+    width: 380px;
+    height: 680px;
+    position: relative;
+    margin: 3% auto;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 20px;    
+}
+
+.form1{
+    width: 380px;
+    height: 540px;
+    position: relative;
+    margin: 3% auto;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+
+    
+}
+
+.button-box{
+   width: 220px;
+   margin: 35px auto;
+  top: 10px;
+   box-shadow: 0 0 20px 9px #ff61241f;
+   border-radius: 30px; 
+   margin-top: 5% !important;
+}
+
+.btn{
+   padding: 10px 30px;
+   cursor: pointer;
+   background: transparent;
+   border: 0;
+   outline: none;
+   position: relative; 
+   font-weight: bold;
+   
+}
+
+#btnn{
+    top: 19px;
+    left: 0;
+    position: absolute;
+    height: 5.3%;
+    width: 110px;
+    background: linear-gradient(to right, rgb(117, 111, 244), rgb(181, 181, 181)) ;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-left: 83px; 
+}
+
+#btnn1{
+    top: 19px;
+    left: 0;
+    position: absolute;
+    height: 6.8%;
+    width: 110px;
+    background: linear-gradient(to right, rgb(117, 111, 244), rgb(181, 181, 181)) ;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-left: 83px; 
+}
+
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.field{
+     width: 100%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-top: 0;
+     border-right: 0;
+     border-bottom: 1px solid #999;
+     outline: none;
+     background: transparent;
+     font-size: 15px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.file{
+    margin-top: 15px;
+}
+
+label{
+    color: #222;
+    background-color: rgb(193, 193, 193);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 15px;
+    
+     
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, rgb(117, 111, 244), rgb(181, 181, 181)) ;
+    border:0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+    margin-left: 40px;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+    margin: auto;
+
+}
+
+#register{
+   left: 50px;
+   top: 90px; 
+}
+
+#login{
+    left: 450px;
+}
